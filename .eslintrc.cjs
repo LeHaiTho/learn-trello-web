@@ -16,12 +16,20 @@ module.exports = {
     'react-refresh'
   ],
   rules: {
+    // react
     'react-refresh/only-export-components': 'warn',
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
     'react/prop-types': 0,
     'react/display-name': 0,
-
+    // MUI
+    'no-restricted-imports': [
+      'error',
+      {
+        'patterns': ['@mui/*/*/*']
+      }
+    ],
+    // Common
     'no-console': 1, // không console trong dự án
     'no-lonely-if': 1,
     'no-unused-vars': 1,
