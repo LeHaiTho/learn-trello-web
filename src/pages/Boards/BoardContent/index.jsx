@@ -9,7 +9,7 @@ function BoardContent() {
       display: 'flex',
       alignItems: 'center'
     }}>
-      Board Content
+
     </Box>
   )
 }
